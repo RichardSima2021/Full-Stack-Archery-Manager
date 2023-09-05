@@ -10,12 +10,12 @@ function App() {
   ]
 
   return (
-    <div>
-      <div>
+    <div className='mt-5 container'>
+      <div className='card-header'>
         Members
       </div>
 
-      <div class="table--container">
+      <div class="card-body">
         <MemberTable members={members}/>
       </div>
     </div>

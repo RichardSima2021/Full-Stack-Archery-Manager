@@ -5,8 +5,6 @@ function TableRowItem(props){
     // const email = 'rsima@uci.edu';
     // const oweEquipment = 'No';
 
-
-
     return(
         <tr>
             <th scope='row'>{props.studentId}</th>
