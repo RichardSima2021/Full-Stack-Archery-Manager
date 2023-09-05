@@ -1,14 +1,16 @@
 import './App.css';
 import MemberTable from './components/MemberTable/MemberTable';
-// import TableRowItem from './components/TableRowItem'; 
+import React, {useState} from 'react';
 
 function App() {
 
-  const members = [
+  // members *access* the array, setMembers *updates* the array
+  const [members, setMembers] = useState([
     {studentId: '28609264', fullName: 'Richard Sima', email: 'rsima@uci.edu', oweEquipment: 'No'},
     {studentId: '94972284', fullName: 'Megan Ngo', email: 'mkngo1@uci.edu', oweEquipment: 'No'},
     {studentId: '12345678', fullName: 'Test Member1', email: 'testmember1@test.edu', oweEquipment: 'Yes'}
-  ];
+  ]
+  );
 
   function addMember(){
     const newMember = {
@@ -17,8 +19,7 @@ function App() {
       email: 'testmember2@test.edu',
       oweEquipment: 'No'
     };
-    members.push(newMember);
-    console.log(members);
+    setMembers(members => [...members, newMember]);  // this adds the new member
   }
 
   return (
