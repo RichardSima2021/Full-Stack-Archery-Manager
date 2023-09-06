@@ -1,5 +1,6 @@
 import './App.css';
 import MemberTable from './components/MemberTable/MemberTable';
+import NewMemberForm from './components/NewMemberForm/NewMemberForm';
 import React, {useState} from 'react';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <button className='btn btn-primary' onClick={addMember}>
           Add new member
           </button>
+          <NewMemberForm></NewMemberForm>
       </div>
     </div>
   );
