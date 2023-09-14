@@ -5,7 +5,7 @@ Currently in development.
 
 Ensure npm is installed 
 
-Clone the repository and run npm install
+Clone the repository and run npm install \
 After dependencies are installed, run npm start to start the local server
 
 Database schema follows the following image: ![](/info/Archery%20Club%20Manager%20Schema.png)
