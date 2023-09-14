@@ -8,7 +8,7 @@ function MemberTable(props){
                     <th scope='col'>StudentID</th>
                     <th scope='col'>Name</th>
                     <th scope='col'>Email</th>  
-                    <th scope='col'>Equipment</th>
+                    <th scope='col'>Owes Equipment</th>
                 </tr>
             </thead>
 

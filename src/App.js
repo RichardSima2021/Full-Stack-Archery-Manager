@@ -13,12 +13,12 @@ function App() {
   ]
   );
 
-  function addMember(){
+  function addMember(studentId, fullName, email, oweEquipment){
     const newMember = {
-      studentId:'00000000',
-      fullName: 'Test Member2',
-      email: 'testmember2@test.edu',
-      oweEquipment: 'No'
+      studentId: studentId,
+      fullName: fullName,
+      email: email,
+      oweEquipment: oweEquipment
     };
     setMembers(members => [...members, newMember]);  // this adds the new member
   }
@@ -34,7 +34,7 @@ function App() {
         <button className='btn btn-primary' onClick={addMember}>
           Add new member
           </button>
-          <NewMemberForm></NewMemberForm>
+          <NewMemberForm addMember={addMember}/>
       </div>
     </div>
   );

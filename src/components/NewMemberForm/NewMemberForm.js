@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './NewMemberForm.css';
 
-function NewMemberForm(){
+function NewMemberForm(props){
     const[studentId, setStudentId] = useState('');
     const[name, setName] = useState('');
     const[email, setEmail] = useState('');
@@ -10,6 +10,16 @@ function NewMemberForm(){
     // const handleInput = (event) => {
     //     console.log(event.target.value);
     // }
+
+    const submitForm = () => {
+        if (studentId && name && email && oweEquipement){
+            props.addMember(studentId, name, email, oweEquipement);
+            setStudentId('');
+            setName('');
+            setEmail('');
+            setOweEquipment('');
+        }
+    };
 
     return(
         <div className='mt-5'>
@@ -55,7 +65,7 @@ function NewMemberForm(){
                     </div>  
             </form>
             
-            <button type='button' className='btn btn-primary mt-3'>Add New Member</button>
+            <button type='button' className='btn btn-primary mt-3' onClick={submitForm}>Add New Member</button>
         </div>
     )
 }
