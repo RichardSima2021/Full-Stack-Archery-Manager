@@ -2,8 +2,8 @@ import TableRowItem from './components/TableRowItem';
 
 function MemberTable(props){
     return (
-        <table class="table">
-          <thead class="table--head">
+        <table className="table">
+          <thead className="table--head">
                 <tr>
                     <th scope='col'>StudentID</th>
                     <th scope='col'>Name</th>
@@ -12,9 +12,10 @@ function MemberTable(props){
                 </tr>
             </thead>
 
-            <tbody class="table--body">
+            <tbody className="table--body">
                 {props.members.map(member =>(
                     <TableRowItem
+                    key={member.studentId}
                     studentId={member.studentId} 
                     fullName={member.fullName} 
                     email={member.email} 
