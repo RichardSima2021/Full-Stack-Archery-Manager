@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './NewMemberForm.css';
 
-function NewMemberForm(props){
+function NewMemberForm(props: {addMember: Function}){
     const[studentId, setStudentId] = useState('');
     const[name, setName] = useState('');
     const[email, setEmail] = useState('');

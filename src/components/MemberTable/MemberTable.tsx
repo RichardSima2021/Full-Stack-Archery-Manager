@@ -1,6 +1,7 @@
+import React from 'react';
 import TableRowItem from './components/TableRowItem'; 
 
-function MemberTable(props){
+function MemberTable(props: {members: Member[]}){
     return (
         <table className="table">
           <thead className="table--head">
@@ -19,7 +20,7 @@ function MemberTable(props){
                     studentId={member.studentId} 
                     fullName={member.fullName} 
                     email={member.email} 
-                    oweEquipment={member.oweEquipment}
+                    oweEquipment={member.owesEquipment}
                     />
                 ))}
             </tbody>
