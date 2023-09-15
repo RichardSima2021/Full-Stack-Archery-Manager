@@ -1,5 +1,5 @@
 import React from 'react';
-import TableRowItem from './components/TableRowItem'; 
+import {TableRowItem} from './components/TableRowItem'; 
 
 function MemberTable(props: {members: Member[]}){
     return (
