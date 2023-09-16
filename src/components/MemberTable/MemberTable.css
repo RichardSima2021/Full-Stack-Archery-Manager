@@ -1,0 +1,25 @@
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid grey;
+}
+
+thead tr{
+    background-color: navy;
+    color: white;
+}
+
+thead th,
+tbody th,
+tbody td{
+    /* border: 1px solid black; */
+    width: 25%;
+    text-align: center;
+}
+
+
+
+/* tbody td{
+    text-align: center;
+} */

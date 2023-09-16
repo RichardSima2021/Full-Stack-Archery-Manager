@@ -1,10 +1,11 @@
 import React from 'react';
 import {TableRowItem} from './components/TableRowItem'; 
+import './MemberTable.css';
 
 function MemberTable(props: {members: Member[]}){
     return (
-        <table className="table">
-          <thead className="table--head">
+        <table>
+          <thead>
                 <tr>
                     <th scope='col'>StudentID</th>
                     <th scope='col'>Name</th>
@@ -13,7 +14,7 @@ function MemberTable(props: {members: Member[]}){
                 </tr>
             </thead>
 
-            <tbody className="table--body">
+            <tbody>
                 {props.members.map(member =>(
                     <TableRowItem
                     key={member.studentId}

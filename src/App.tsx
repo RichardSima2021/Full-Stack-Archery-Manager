@@ -24,8 +24,8 @@ function App() {
   }
 
   return (
-    <div className='mt-5 container'>
-      <div className='card-header'>
+    <div>
+      <div>
         Members
       </div>
 
@@ -34,7 +34,7 @@ function App() {
         {/* <button className='btn btn-primary' onClick={addMember}>
           Add new member
           </button> */}
-          <NewMemberForm addMember={addMember}/>
+        <NewMemberForm addMember={addMember}/>
       </div>
     </div>
   );

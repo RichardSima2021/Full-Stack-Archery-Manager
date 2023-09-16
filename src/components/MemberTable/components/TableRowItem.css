@@ -1,13 +1,7 @@
-/* !important to override bootstrap styling */
+/* tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-/* .col-1{
-    background-color: blueviolet !important;
-}
-
-.col-2{
-    background-color: goldenrod !important;
-}
-
-.col-3{
-    background-color: palegreen !important;
 } */
+

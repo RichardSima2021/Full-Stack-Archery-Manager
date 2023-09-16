@@ -22,7 +22,7 @@ function NewMemberForm(props: {addMember: Function}){
     };
 
     return(
-        <div className='mt-5'>
+        <div>
             <form className='form'>
                 <div className='entry-column'>
                     <label className='entry-column--label'>Student ID</label>
@@ -65,7 +65,7 @@ function NewMemberForm(props: {addMember: Function}){
                     </div>  
             </form>
             
-            <button type='button' className='btn btn-primary mt-3' onClick={submitForm}>Add New Member</button>
+            <button type='button' onClick={submitForm}>Add New Member</button>
         </div>
     )
 }
