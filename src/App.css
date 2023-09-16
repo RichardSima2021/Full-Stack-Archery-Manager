@@ -4,6 +4,6 @@ body{
 }
 
 
-.card-body{
-    background-color: cyan;
+.container{
+    padding: 20px;
 }

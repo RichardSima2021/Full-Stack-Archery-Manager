@@ -4,7 +4,7 @@ import './MemberTable.css';
 
 function MemberTable(props: {members: Member[]}){
     return (
-        <table>
+        <table className='tableContainer'>
           <thead>
                 <tr>
                     <th scope='col'>StudentID</th>

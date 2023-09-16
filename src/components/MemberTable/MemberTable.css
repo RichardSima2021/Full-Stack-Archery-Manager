@@ -2,7 +2,7 @@ table{
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid grey;
+    margin-bottom: 20px;
 }
 
 thead tr{
@@ -18,7 +18,10 @@ tbody td{
     text-align: center;
 }
 
-
+.tableContainer{
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
 
 /* tbody td{
     text-align: center;
