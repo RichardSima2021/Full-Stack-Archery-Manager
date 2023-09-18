@@ -1,3 +1,9 @@
-.card-body{
-    background-color: cyan;
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container{
+    padding: 20px;
 }
