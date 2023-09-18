@@ -1,18 +1,18 @@
-.form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #cfcfcf;
-    border-radius: 5px;
-    padding: 10px;
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.entry-column{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /*    
+.entry-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*    
     Need to implement SCSS  for this
     &--label{
         background-color: cyan;
@@ -20,12 +20,8 @@
     &--input{
 
     } */
-
 }
-
-
 
 /* .entry-column--label{
     background-color: cyan;
 } */
-
