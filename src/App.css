@@ -1,8 +1,43 @@
-body {
-  display: flex;
-  flex-direction: column;
+:root {
+  --mainOpacity: rgba(0, 0, 0, 0.55);
+  --uci-blue: #0064a4;
+  --uci-gold: #ffd200;
+  --uci-light-blue: #6aa2b8;
+  --uci-light-gray: #c6b3b5;
+  --uci-dark-blue: #1b3d6d;
+  --uci-orange: #f78d2d;
+  --uci-light-yellow: #f7eb5f;
+  --uci-dark-gray: #555759;
+  --uci-lime-green: #7ab800;
 }
 
-.container {
-  padding: 20px;
+.main-container {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* flex: 1; */
+}
+
+.header {
+  opacity: var(--mainOpacity);
+  height: 25em !important;
+}
+
+/* .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.main-color {
+  background-color: var(--uci-blue);
+}
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
 }

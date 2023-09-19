@@ -1,6 +1,5 @@
-/* tr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-} */
+th, td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

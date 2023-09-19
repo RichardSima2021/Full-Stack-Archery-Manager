@@ -1,6 +1,7 @@
 import "./App.css";
 import MemberTable from "./components/MemberTable/MemberTable";
 import NewMemberForm from "./components/NewMemberForm/NewMemberForm";
+import { Navbar } from "./components/Navbar/Navbar";
 import React, { useState } from "react";
 
 function App() {
@@ -43,28 +44,8 @@ function App() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark main-color py-3">
-        <div className="container-fluid">
-          <span className="navbar-brand">Archery Club at UCI</span>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-formTarget="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle Navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item"></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div className="container">
+      <Navbar />
+      <div className="main-container">
         <div>Members</div>
 
         <div>
