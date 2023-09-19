@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Full-Stack-Archery-Manager.iml" filepath="$PROJECT_DIR$/.idea/Full-Stack-Archery-Manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/backend/spring-boot-library/spring-boot-library.iml" filepath="$PROJECT_DIR$/src/backend/spring-boot-library/spring-boot-library.iml" />
     </modules>
   </component>
 </project>
