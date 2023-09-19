@@ -1,15 +1,17 @@
-
 Club management software for the Archery Club at UCI
 
 Currently in development.
 
-Ensure npm is installed 
+Ensure npm is installed
 
 Clone the repository and run npm install \
 After dependencies are installed, run npm start to start the local server
 
+v1.0 flowchart: ![](/info/v1.0%20flowchart.png)
+
 Database schema follows the following image: ![](/info/Archery%20Club%20Manager%20Schema.png)
 Database preparation SQL:
+
 ```sql
 CREATE TABLE IF NOT EXISTS members(
 	id INTEGER NOT NULL AUTO_INCREMENT,
