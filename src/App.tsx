@@ -1,7 +1,7 @@
 import "./App.css";
-import MemberTable from "./components/MemberTable/MemberTable";
-import NewMemberForm from "./components/NewMemberForm/NewMemberForm";
-import { Navbar } from "./components/Navbar/Navbar";
+import MemberTable from "./frontend/components/MemberTable/MemberTable";
+import NewMemberForm from "./frontend/components/NewMemberForm/NewMemberForm";
+import { Navbar } from "./frontend/components/Navbar/Navbar";
 import React, { useState } from "react";
 
 function App() {
