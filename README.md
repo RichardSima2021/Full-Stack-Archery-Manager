@@ -2,10 +2,18 @@ Club management software for the Archery Club at UCI
 
 Currently in development.
 
+Frontend development setup:\
 Ensure npm is installed
 
 Clone the repository and run npm install \
-After dependencies are installed, run npm start to start the local server
+After dependencies are installed, run npm start to start the local server 
+
+Backend setup:\
+Ensure Maven and Java 20 is installed
+
+cd to the backend directory where pom.xml is
+run mmvn dependency:copy-dependencies
+After dependencies are installed, run SpringBootLibraryApplication to start backend server
 
 v1.0 flowchart: ![](/info/v1.0%20flowchart.png)
 
