@@ -1,7 +1,8 @@
 class Member {
   id?: number;
   studentId: string;
-  fullName: string;
+  firstName: string;
+  lastName: string;
   email: string;
   active?: boolean;
   owesEquipment: boolean;
@@ -9,14 +10,16 @@ class Member {
   constructor(
     id: number,
     studentId: string,
-    fullName: string,
+    lastName: string,
+    firstName: string,
     email: string,
     active: boolean,
     owesEquipment: boolean
   ) {
     this.id = id;
     this.studentId = studentId;
-    this.fullName = fullName;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.email = email;
     this.active = active;
     this.owesEquipment = owesEquipment;

@@ -1,0 +1,58 @@
+diff --git a/node_modules/tdesign-react/dist/tdesign.css b/node_modules/tdesign-react/dist/tdesign.css
+index 456dbe7..f0e33cd 100644
+--- a/node_modules/tdesign-react/dist/tdesign.css
++++ b/node_modules/tdesign-react/dist/tdesign.css
+@@ -5,6 +5,15 @@
+   --td-screen-lg: 1200px;
+   --td-screen-xl: 1400px;
+   --td-screen-xxl: 1880px;
++  --uci-blue: #0064a4;
++  --uci-gold: #ffd200;
++  --uci-light-blue: #6aa2b8;
++  --uci-light-gray: #c6b3b5;
++  --uci-dark-blue: #1b3d6d;
++  --uci-orange: #f78d2d;
++  --uci-light-yellow: #f7eb5f;
++  --uci-dark-gray: #555759;
++  --uci-lime-green: #7ab800;
+ }
+ .narrow-scrollbar {
+   scrollbar-color: var(--td-scrollbar-color) transparent;
+diff --git a/node_modules/tdesign-react/es/style/index.css b/node_modules/tdesign-react/es/style/index.css
+index c00440d..5bd06a6 100644
+--- a/node_modules/tdesign-react/es/style/index.css
++++ b/node_modules/tdesign-react/es/style/index.css
+@@ -5,6 +5,15 @@
+   --td-screen-lg: 1200px;
+   --td-screen-xl: 1400px;
+   --td-screen-xxl: 1880px;
++  --uci-blue: #0064a4;
++  --uci-gold: #ffd200;
++  --uci-light-blue: #6aa2b8;
++  --uci-light-gray: #c6b3b5;
++  --uci-dark-blue: #1b3d6d;
++  --uci-orange: #f78d2d;
++  --uci-light-yellow: #f7eb5f;
++  --uci-dark-gray: #555759;
++  --uci-lime-green: #7ab800;
+ }
+ .narrow-scrollbar {
+   scrollbar-color: var(--td-scrollbar-color) transparent;
+@@ -102,7 +111,7 @@
+   --td-font-gray-2: rgba(0, 0, 0, 0.6);
+   --td-font-gray-3: rgba(0, 0, 0, 0.4);
+   --td-font-gray-4: rgba(0, 0, 0, 0.26);
+-  --td-brand-color: var(--td-brand-color-7);
++  --td-brand-color: var(--uci-blue);
+   --td-warning-color: var(--td-warning-color-5);
+   --td-error-color: var(--td-error-color-6);
+   --td-success-color: var(--td-success-color-5);
+@@ -234,7 +243,7 @@
+   --td-font-gray-2: rgba(0, 0, 0, 0.6);
+   --td-font-gray-3: rgba(0, 0, 0, 0.4);
+   --td-font-gray-4: rgba(0, 0, 0, 0.26);
+-  --td-brand-color: var(--td-brand-color-8);
++  --td-brand-color: var(--uci-blue);
+   --td-warning-color: var(--td-warning-color-5);
+   --td-error-color: var(--td-error-color-6);
+   --td-success-color: var(--td-success-color-5);
