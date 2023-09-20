@@ -49,7 +49,7 @@ function App() {
         <div>Members</div>
 
         <div>
-          <MemberTable members={members} />
+          <MemberTable />
           {/* <button className='btn btn-primary' onClick={addMember}>
             Add new member
             </button> */}
