@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Loading, Pagination } from "tdesign-react";
+import { Loading, Pagination, Input } from "tdesign-react";
 import { TableRowItem } from "./components/TableRowItem";
 import "./MemberTable.css";
 import { MemberCard } from "../MemberCard/MemberCard";
@@ -80,6 +80,7 @@ function MemberTable() {
     // })
     fetchMembers().catch(fetchMembersError);
     // this and the above arrow function do the same thing
+    window.scroll(0, 0);
   }, [currentPage, pageSize]);
 
   if (isLoading) {
@@ -100,6 +101,14 @@ function MemberTable() {
 
   return (
     <div>
+      <h1>Members</h1>
+      <Input
+        align="left"
+        size="medium"
+        status="default"
+        placeholder="Search By Name"
+        type="text"
+      />
       <table className="tableContainer">
         <thead>
           <tr>

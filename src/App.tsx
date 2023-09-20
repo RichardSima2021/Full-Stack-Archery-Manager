@@ -48,8 +48,6 @@ function App() {
     <div>
       <Navbar />
       <div className="main-container">
-        <div>Members</div>
-
         <div>
           <MemberTable />
           {/* <button className='btn btn-primary' onClick={addMember}>
