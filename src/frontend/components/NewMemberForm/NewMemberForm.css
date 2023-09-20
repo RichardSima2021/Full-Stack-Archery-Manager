@@ -23,6 +23,13 @@
   }
 }
 
+/* stil need to figure out how to change tdesign styles */
+.submit-button {
+  background-color: var(--uci-blue) !important;
+  border-color: var(--uci-blue) !important;
+  color: white !important;
+}
+
 /* input {
   max-width: 100%;
   flex-shrink: 1;

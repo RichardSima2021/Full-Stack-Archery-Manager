@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NewMemberForm.css";
+import { Button } from "tdesign-react";
 
 function NewMemberForm(props: { addMember: Function }) {
   const [studentId, setStudentId] = useState("");
@@ -69,9 +70,15 @@ function NewMemberForm(props: { addMember: Function }) {
         </div>
       </form>
 
-      <button type="button" onClick={submitForm}>
+      <Button
+        shape="rectangle"
+        size="medium"
+        type="button"
+        onClick={submitForm}
+        className="submit-button"
+      >
         Add New Member
-      </button>
+      </Button>
     </div>
   );
 }
