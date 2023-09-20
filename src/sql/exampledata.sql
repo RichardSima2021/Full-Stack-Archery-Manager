@@ -73,3 +73,47 @@ VALUES(4, 7, 0);
 INSERT INTO members_borrowing_equipment
 VALUES(4, 8, 0);
 
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("John", "Smith", 11111111, "johnsmith@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Your", "Mom", 22222222, "yourmom@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("TestUser", "2", 24681357, "testuser2@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("James", "Yang", 09876543, "jyang4@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Some", "Dude", 54671290, "somedude@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Aname", "Alastname", 45764797, "bruhidk@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Yang", "Yu", 18726327, "yayu@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Foo", "Bar", 87651234, "foobar@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Peter", "Anteater", 53456782, "peteranteater@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Peter", "Canteater", 51426734, "petercanteater@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Peter", "Banteater", 12904578, "peterbanteater@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Retep", "Bananeater", 45624578, "retepbanana@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Kiwi", "Pants", 78963124, "kiwipants@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("Ooga", "Booga", 36472389, "oogabooga@uci.edu", false);
+
+INSERT INTO members(firstName, lastName, studentId, uciEmail, loaningEquipment)
+VALUES("boogle", "google", 05673409, "booglegoogle@uci.edu", false);
