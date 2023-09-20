@@ -19,19 +19,20 @@ function MemberTable() {
   }
 
   const onPageSizeChange = (size: any) => {
-    console.log("Page size now", size);
+    // console.log("Page size now", size);
     setPageSize(size);
   };
 
-  const onCurrentChange = (index: any) => {
-    console.log(`Jumped to page ${index}`);
+  const changePage = (index: any) => {
+    // console.log(`Jumped to page ${index}`);
+    setCurrentPage(index);
   };
 
   useEffect(() => {
     const fetchMembers = async () => {
       const baseUrl: string = "http://localhost:8080/api/members";
 
-      const url: string = `${baseUrl}?page=0&size=5`;
+      const url: string = `${baseUrl}?page=${currentPage - 1}&size=${pageSize}`;
       // console.log(url);
 
       const response = await fetch(url);
@@ -79,7 +80,7 @@ function MemberTable() {
     // })
     fetchMembers().catch(fetchMembersError);
     // this and the above arrow function do the same thing
-  }, []);
+  }, [currentPage, pageSize]);
 
   if (isLoading) {
     return (
@@ -125,7 +126,7 @@ function MemberTable() {
       <Pagination
         total={totalMemberCount}
         defaultPageSize={pageSize}
-        onCurrentChange={onCurrentChange}
+        onCurrentChange={changePage}
         onPageSizeChange={onPageSizeChange}
       />
     </div>
