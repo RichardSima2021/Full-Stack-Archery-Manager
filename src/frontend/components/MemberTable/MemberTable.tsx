@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Loading } from "tdesign-react";
 import { TableRowItem } from "./components/TableRowItem";
 import "./MemberTable.css";
 
@@ -43,6 +44,12 @@ function MemberTable() {
         });
       }
 
+      // test loading
+      // setTimeout(() => {
+      //   setClubMembers(loadedMembers);
+      //   setIsLoading(false);
+      // }, 2000);
+
       setClubMembers(loadedMembers);
       setIsLoading(false);
     };
@@ -58,8 +65,8 @@ function MemberTable() {
 
   if (isLoading) {
     return (
-      <div className="loadingContainer m-5">
-        <p>Loading...</p>
+      <div className="loadingContainer">
+        <Loading indicator loading preventScrollThrough showOverlay />
       </div>
     );
   }

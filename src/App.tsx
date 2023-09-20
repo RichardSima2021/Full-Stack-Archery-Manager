@@ -3,6 +3,8 @@ import MemberTable from "./frontend/components/MemberTable/MemberTable";
 import NewMemberForm from "./frontend/components/NewMemberForm/NewMemberForm";
 import { Navbar } from "./frontend/components/Navbar/Navbar";
 import React, { useState } from "react";
+import { Button } from "tdesign-react";
+import "tdesign-react/es/style/index.css";
 
 function App() {
   // members *access* the array, setMembers *updates* the array
@@ -53,6 +55,9 @@ function App() {
           {/* <button className='btn btn-primary' onClick={addMember}>
             Add new member
             </button> */}
+          {/* <Button shape="rectangle" size="medium" type="button" variant="base">
+            Test
+          </Button> */}
           <NewMemberForm addMember={addMember} />
         </div>
       </div>

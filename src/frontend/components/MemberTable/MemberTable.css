@@ -23,6 +23,12 @@ tbody td {
   border-radius: 5px;
 }
 
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
 /* tbody td{
     text-align: center;
 } */
